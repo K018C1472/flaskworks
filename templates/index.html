@@ -5,10 +5,9 @@
     </head>
 
     <body>
-        <ul>
-            {% for key in list %}
-            <li>{{ key }} {{ list[key] }} </li>
-            {% endfor %}
-        </ul>
+        <form method="post" action="/send">
+            <input type="text" id="msg" name="msg">
+            <input type="submit" value="送信">
+        </form>
     </body>
 </html>
