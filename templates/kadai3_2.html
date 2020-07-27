@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+        <h1>70点以上の科目：</h1>
+        <h2>{% for test in list %}
+            {% if list[test] >= 70 %}
+            {{ test }}
+            {% endif %}
+            {% endfor %}
+        </h2>
+    </body>
+</html>
